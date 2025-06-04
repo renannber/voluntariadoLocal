@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box
+}
+body { 
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color:black
+}
+header{
+    background-color: #201c5f;
+    text-align: center;
+    color: white;
+    padding: 0.8 rem 0;
+}
+ .cabecalho-content { 
+
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 10;
+
+ }
