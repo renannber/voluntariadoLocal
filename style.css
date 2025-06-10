@@ -8,14 +8,16 @@ body {
     margin: 0;
     padding: 0;
     background-color: white;
-    color:black
+    color:black;
+     font-family:'Montserrat', sans-serif;
 }
 header{
     background-color: #201c5f;
     text-align: center;
     color: white;
-    padding: 0.8 rem 0;
+    padding: 1rem 0;
 }
+
  .cabecalho-content { 
 
     display: flex;
@@ -24,3 +26,37 @@ header{
     margin-top: 10;
 
  }
+ nav a{
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 6px;
+    transition: background 0.3s;
+
+ }
+ nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+ }
+
+ .container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+ }
+ .conteudo  {
+
+    max-width: 800px;
+    width:100%;
+    background-color: aliceblue;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center ;
+    box-shadow: 0 4px 10px white;
+ }
+.conteudo p {
+    color: #201c5f;
+}
