@@ -28,7 +28,7 @@ header{
  }
  nav a{
     color: white;
-    padding: 10px 15px;
+    padding: 4px 4px;
     text-decoration: none;
     font-size: 18px;
     border-radius: 6px;
@@ -36,7 +36,7 @@ header{
 
  }
  nav a:hover {
-    background: rgba(255, 255, 255, 0.2);
+     background:#968fed;
  }
 
  .container {
@@ -51,12 +51,12 @@ header{
 
     max-width: 800px;
     width:100%;
-    background-color: aliceblue;
+    background-color: rgb(198, 224, 247);
     padding: 2rem;
     border-radius: 12px;
     text-align: center ;
     box-shadow: 0 4px 10px white;
  }
 .conteudo p {
-    color: #201c5f;
+    color: white;
 }
