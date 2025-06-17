@@ -13,11 +13,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: white;
-    color:black;
+    color:#4e5c66;
      font-family:'Montserrat', sans-serif;
 }
 header{
-    background-color: #201c5f;
+    background-color: #158cba ;
     text-align: center;
     color: white;
     padding: 1rem 0;
@@ -28,20 +28,21 @@ header{
     display: flex;
     justify-content: center;
     gap: 3rem;
-    margin-top: 10;
+    margin-top: 10px;
 
  }
  nav a{
     color: white;
-    padding: 4px 4px;
+    padding: 4px 8px;
     text-decoration: none;
     font-size: 18px;
     border-radius: 6px;
-    transition: background 0.3s;
+    transition: background 0.3s, color 0.3;
 
  }
  nav a:hover {
-     background:#968fed;
+     background: #00AEEF;
+     color: #001F3F;
  }
 
  .container {
@@ -54,14 +55,11 @@ header{
  }
  .conteudo  {
 
-    max-width: 800px;
-    width:100%;
-    background-color: rgb(198, 224, 247);
-    padding: 2rem;
+    max-width: 6000px;
+    width:600%;
+    background-color: white;
+    padding: 3rem;
     border-radius: 12px;
     text-align: center ;
-    box-shadow: 0 4px 10px white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
  }
-.conteudo p {
-    color: white;
-}
