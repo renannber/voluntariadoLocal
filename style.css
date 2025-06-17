@@ -63,3 +63,56 @@ header{
     text-align: center ;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
  }
+ /* ajusta a imagem  */
+.ajuda-card img {
+    width: auto;        /* Faz a imagem ocupar toda a largura do card */
+    height: 200px;      
+    object-fit: cover;  /* ajusta a imagem mantendo proporção sem distorcer */
+    border-radius: 8px; /* Deixa os cantinhos arredondados  */
+}
+.ajuda-card {
+    background-color: #f0f8ff;
+    border-radius: 12px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+/* ajuste de titulo*/
+.ajuda-card h3 {
+    margin-top: 10px;
+    color: #201c5f;
+    text-align: center;
+}
+
+/* ajuste do texto da discrição*/
+.ajuda-card p {
+    margin: 10px 0;
+    color: #333;
+    text-align: justify;
+}
+/* botão do saiba  */
+.ajuda-card .saiba {
+    background-color: #201c5f;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+.ajuda-card .saiba:hover {
+    background-color: #574fc1;
+}
+
+/* Título da seção */
+.categoria h2 {
+    text-align: center;
+    color: #201c5f;
+    margin-top: 20px;
+}
+
+
