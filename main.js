@@ -1,47 +1,44 @@
 
   const cadastro = []; // Array para armazenar os dados
 
-  const botao = document.querySelector('button');
+const botao = document.querySelector('button');
 
-  botao.addEventListener('click', function() {
-    const nome = document.getElementById('nome').value;
-    const titulo = document.getElementById('titulo').value;
-    const descricao = document.querySelector('textarea').value;
-    const cep = document.getElementById('cep').value;
-    const rua = document.getElementById('rua').value;
-    const numero = document.querySelector('input[placeholder="número"]').value;
-    const bairro = document.getElementById('bairro').value;
-    const cidade = document.getElementById('cidade').value;
-    const estado = document.getElementById('estado').value;
-    const email = document.getElementById('email').value;
-    const telefone = document.getElementById('telefone').value;
-    const opcaoAjuda = document.querySelector('select').value;
+botao.addEventListener('click', function() {
+  const nome = document.getElementById('nome').value;
+  const titulo = document.getElementById('titulo').value;
+  const descricao = document.getElementById('descricao').value;
+  const cep = document.getElementById('cep').value;
+  const rua = document.getElementById('rua').value;
+  const numero = document.getElementById('num').value; 
+  const bairro = document.getElementById('bairro').value;
+  const cidade = document.getElementById('cidade').value;
+  const estado = document.getElementById('estado').value;
+  const email = document.getElementById('email').value;
+  const telefone = document.getElementById('telefone').value;
+  const opcaoAjuda = document.getElementById('ajuda').value; 
 
-    const dados = {
-      nome,
-      opcaoAjuda,
-      titulo,
-      descricao,
-      cep,
-      rua,
-      numero,
-      bairro,
-      cidade,
-      estado,
-      email,
-      telefone
-    };
+  const dados = {
+    nome,
+    opcaoAjuda,
+    titulo,
+    descricao,
+    cep,
+    rua,
+    numero,
+    bairro,
+    cidade,
+    estado,
+    email,
+    telefone
+  };
 
-    cadastro.push(dados); // Adiciona os dados no array
+  cadastro.push(dados); // Adiciona os dados no array
 
-    console.log(cadastro); // Mostra no console
+  console.log(cadastro); // Mostra no console
 
-    alert("Cadastro realizado com sucesso!");
-    document.getElementById('formcadastro').reset(); // Limpa o formulário
-  });
-
- 
-
+  alert("Cadastro realizado com sucesso!");
+  document.getElementById('formcadastro').reset(); // Limpa o formulário
+});
 
 // verifica se o cep é valido
 const eNumero = (numero) => /^[0-9]+$/.test(numero);    //expressão para ver se está entre 0 á 9
@@ -50,8 +47,9 @@ const cepValido = (cep) => cep.length == 8 && eNumero(cep); // testa para ver se
 
 const pesquisarCep = async() => {
     limparFormulario();
+    const cep = document.getElementById('cep'); // precisa pegar o elemento aqui para usar cep.value
     const url = `https://viacep.com.br/ws/${cep.value}/json/`; //o ${cep.value} é usado para trocar o cep para o que for usado no cadastro
-      if(cepValido(cep.value))
+    if(cepValido(cep.value))
     {
         const dados = await fetch(url); // await é uma pausa para verificar se o fetch vai conseguir da um retorno 
 
@@ -72,8 +70,7 @@ const preencherFormulario = (endereco) => {
     document.getElementById('rua').value = endereco.logradouro;
     document.getElementById('bairro').value = endereco.bairro ; 
     document.getElementById('cidade').value = endereco.localidade;
-    document.getElementById('estado').value = endereco.estado;
-
+    document.getElementById('estado').value = endereco.uf;
 }
 //função para limpar o furmalrio 
 const limparFormulario = () => {
@@ -85,4 +82,3 @@ const limparFormulario = () => {
 }
 
 document.getElementById('cep').addEventListener('focusout', pesquisarCep); // onde acontece o evento que puxa os dados do cep 
-

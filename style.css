@@ -54,7 +54,7 @@ header{
 
  }
  .conteudo  {
-
+    
     max-width: 6000px;
     width:600%;
     background-color: white;
@@ -63,4 +63,36 @@ header{
     text-align: center ;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
  }
- 
+ .btn-cadastrar {
+  margin: 20px;
+  background-color: #158cba;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-cadastrar:hover {
+  background-color: #11719a; 
+}
+.centralizar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+ footer {
+    background-color:#158cba ;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  footer div  {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
