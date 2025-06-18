@@ -1,4 +1,48 @@
+
+  const cadastro = []; // Array para armazenar os dados
+
+  const botao = document.querySelector('button');
+
+  botao.addEventListener('click', function() {
+    const nome = document.getElementById('nome').value;
+    const titulo = document.getElementById('titulo').value;
+    const descricao = document.querySelector('textarea').value;
+    const cep = document.getElementById('cep').value;
+    const rua = document.getElementById('rua').value;
+    const numero = document.querySelector('input[placeholder="número"]').value;
+    const bairro = document.getElementById('bairro').value;
+    const cidade = document.getElementById('cidade').value;
+    const estado = document.getElementById('estado').value;
+    const email = document.getElementById('email').value;
+    const telefone = document.getElementById('telefone').value;
+    const opcaoAjuda = document.querySelector('select').value;
+
+    const dados = {
+      nome,
+      opcaoAjuda,
+      titulo,
+      descricao,
+      cep,
+      rua,
+      numero,
+      bairro,
+      cidade,
+      estado,
+      email,
+      telefone
+    };
+
+    cadastro.push(dados); // Adiciona os dados no array
+
+    console.log(cadastro); // Mostra no console
+
+    alert("Cadastro realizado com sucesso!");
+    document.getElementById('formcadastro').reset(); // Limpa o formulário
+  });
+
  
+
+
 // verifica se o cep é valido
 const eNumero = (numero) => /^[0-9]+$/.test(numero);    //expressão para ver se está entre 0 á 9
 
