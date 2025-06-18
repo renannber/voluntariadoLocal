@@ -6,85 +6,118 @@
   <title>Voluntariando</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-      <header>
-    <h1>Volontariando</h1>
+  <header>
+    <h1>Voluntariando</h1>
     <div class="cabecalho-content">
       <nav>
         <a href="home.html">Home</a>
         <a href="cadastro.html">Cadastro de necessidade</a>
-        <a href="necessidades.html">Necessidade da Comunidade </a>
+        <a href="necessidades.html">Necessidade da Comunidade</a>
       </nav>
     </div>
   </header>
 
-<div class ="container">
-  <div class="conteudo-form">
-    
-    <h1>Cadastro de Necessidade </h1>
-    <form id="formcadastro">
-        <label class="form-label">Nome<span style="color: red;">*</label>
-        <input type="text" name="nome" id="nome" class="form-control"
-        placeholder="Digite a instituição">
+  <div class="container">
+    <div class="conteudo-form">
+      <h1>Cadastro de Necessidade</h1>
 
-        <label class="form-label">Opções de ajuda</label>
-        <select class="form-select"> Opções de ajuda: 
-        <option value="text"> Apoio social</option>
-        <option value="text"> Doações de alimento</option>
-        <option value="text"> Doações de roupas </option>
-        <option value="text"> Educação </option>
-        <option value="text"> Meio ambiente </option>
+      <form id="formcadastro">
+        <label class="form-label">Nome <span style="color: red;">*</span></label>
+        <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite a instituição" required>
+
+        <label class="form-label">Opções de ajuda <span style="color: red;">*</span></label>
+        <select class="form-select" id="ajuda" name="ajuda" required>
+          <option value="">Selecione uma opção</option>
+          <option value="Apoio social">Apoio social</option>
+          <option value="Doações de alimento">Doações de alimento</option>
+          <option value="Doações de roupas">Doações de roupas</option>
+          <option value="Educação">Educação</option>
+          <option value="Meio ambiente">Meio ambiente</option>
         </select>
 
-        <label class="form-label"> Titulo  <span style="color: red;">*</label>
-        <input type="text" name="titulo" id="titulo" class="form-control"
-        placeholder="Digite a necessidade">
+        <label class="form-label">Título <span style="color: red;">*</span></label>
+        <input type="text" name="titulo" id="titulo" class="form-control" placeholder="Digite a necessidade" required>
 
-        <label class="form-label">Descrição<span style="color: red;">* </label>
-        <textarea class="form-control" placeholder="Descreva um pouco sobre a sua necessidades"></textarea>
-        <br>
+        <label class="form-label">Descrição <span style="color: red;">*</span></label>
+        <textarea class="form-control" id="descricao" placeholder="Descreva um pouco sobre a sua necessidade" required></textarea>
 
-        <label class="form-label">CEP<span style="color: red;">*</label>
-        <input type="text" name="nome" id="cep" class="form-control" placeholder="Digite o CEP">
+        <label class="form-label">CEP <span style="color: red;">*</span></label>
+        <input type="text" name="cep" id="cep" class="form-control" placeholder="Digite o CEP" required>
 
-        <label for="">Rua</label>
+        <label class="form-label">Rua</label>
         <input type="text" name="rua" id="rua" class="form-control" placeholder="Rua">
 
-        <label for="">N°</label>
-        <input type="text" name="num" id="num"class="form-control" placeholder="número">
+        <label class="form-label">N°</label>
+        <input type="text" name="num" id="num" class="form-control" placeholder="Número">
 
-        <label for="">Bairro</label>
+        <label class="form-label">Bairro</label>
         <input type="text" name="bairro" id="bairro" class="form-control" placeholder="Bairro">
 
-        <label for="">Cidade</label>
+        <label class="form-label">Cidade</label>
         <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Cidade">
 
-        <label for="">Estado</label>
-        <input type="text" name="estado" id="estado" class="form-control" placeholder="Estato">
+        <label class="form-label">Estado</label>
+        <input type="text" name="estado" id="estado" class="form-control" placeholder="Estado">
 
-        <label for="">E-mail<span style="color: red;">*</label>
-        <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu E-mail">
+        <label class="form-label">E-mail <span style="color: red;">*</span></label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" required>
 
-        <label for="">Telefone<span style="color: red;">*</label>
-        <input type="text" name="telefone" id="telefone" class="form-control" placeholder="Digite seu telefone">
-        <button type="button" class="btn" style="color:#201c5f">Cadastrar</button>
-        
+        <label class="form-label">Telefone <span style="color: red;">*</span></label>
+        <input type="text" name="telefone" id="telefone" class="form-control" placeholder="Digite seu telefone" required>
 
+        <br>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+      </form>
+    </div>
+  </div>
 
-        </form>
-
-</div>
-
-</div>
-
-  <script src="main.js"></script>
   <footer>
-   
-  <p>&copy;2025 Voluntariando. Todos os direitos reservados</p>
-  
+    <p>&copy;2025 Voluntariando. Todos os direitos reservados</p>
   </footer>
 
+  <!-- SCRIPT -->
+  <script>
+    document.getElementById('formcadastro').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const nome = document.getElementById('nome').value;
+      const titulo = document.getElementById('titulo').value;
+      const descricao = document.getElementById('descricao').value;
+      const cep = document.getElementById('cep').value;
+      const rua = document.getElementById('rua').value;
+      const numero = document.getElementById('num').value;
+      const bairro = document.getElementById('bairro').value;
+      const cidade = document.getElementById('cidade').value;
+      const estado = document.getElementById('estado').value;
+      const email = document.getElementById('email').value;
+      const telefone = document.getElementById('telefone').value;
+      const opcaoAjuda = document.getElementById('ajuda').value;
+
+      const dados = {
+        nome,
+        titulo,
+        descricao,
+        cep,
+        rua,
+        numero,
+        bairro,
+        cidade,
+        estado,
+        email,
+        telefone,
+        opcaoAjuda
+      };
+
+      const lista = JSON.parse(localStorage.getItem('cadastros')) || [];
+      lista.push(dados);
+      localStorage.setItem('cadastros', JSON.stringify(lista));
+
+      alert("Cadastro realizado com sucesso!");
+      document.getElementById('formcadastro').reset();
+    });
+  </script>
 </body>
 </html>
