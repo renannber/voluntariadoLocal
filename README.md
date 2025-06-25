@@ -18,6 +18,10 @@
 - **API ViaCEP** – Para preenchimento automático de endereço.
 
 
+<h2>Demonstração do fluxo de página </h2>
+
+https://github.com/user-attachments/assets/08123aff-6f1e-4cab-89c6-490704c92104
+
 
 
 ## 🚀 Como usar
