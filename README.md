@@ -17,4 +17,24 @@
 - Bootstrap - Framework para estilização e responsividade.
 - API ViaCEP- Para preenchimento automático de endereço.
 
+##   Como usar
+
+Você pode utilizar de duas formas:
+
+###   Acessar online
+Abra diretamente pelo link do repositório no GitHub Pages:  https://renannber.github.io/voluntariadoLocal/home.html
+️Acessar o website
+
+
+###   Usar localmente
+1. Clone o repositório: https://github.com/renannber/voluntariadoLocal.git
+```bash
+git clone 
+2-Acesse a pasta do projeto.
+
+3-Abra o arquivo index.html no seu navegador 
+ 
+
+
+
 
