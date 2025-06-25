@@ -76,3 +76,28 @@ document.getElementById('procurarInput').addEventListener('input', function () {
 });
 
 document.addEventListener("DOMContentLoaded", carregarNecessidades);
+
+function aplicarFiltros() {
+  const texto = document.getElementById('procurarInput').value.toLowerCase();
+  const filtro = document.getElementById('filtroAjuda').value.toLowerCase();
+
+  const resultado = lista.filter(item => {
+    const atendeBusca = 
+      item.nome.toLowerCase().includes(texto) ||
+      item.titulo.toLowerCase().includes(texto) ||
+      item.descricao.toLowerCase().includes(texto) ||
+      item.opcaoAjuda.toLowerCase().includes(texto) ||
+      item.bairro.toLowerCase().includes(texto) ||
+      item.cidade.toLowerCase().includes(texto) ||
+      item.estado.toLowerCase().includes(texto);
+
+    const atendeFiltro = filtro === "" || item.opcaoAjuda.toLowerCase() === filtro;
+
+    return atendeBusca && atendeFiltro;
+  });
+
+  exibirNecessidades(resultado);
+}
+
+document.getElementById('procurarInput').addEventListener('input', aplicarFiltros);
+document.getElementById('filtroAjuda').addEventListener('change', aplicarFiltros);

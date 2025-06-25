@@ -167,6 +167,28 @@ button.bt:hover {
 .procurar input:focus {
   border-color: #158cba;
 }
+/* caixa do filtro */
+.filtro{
+  display: flex;
+  justify-content: center;
+  margin: 5px auto;
+  padding: 5px;
+}
+
+.filtro select{
+ background-color: #eaecef;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  margin-top: 30px;
+  text-align: center;
+}
+
+.filtro select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
 
 
  footer {
