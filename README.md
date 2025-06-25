@@ -20,32 +20,33 @@
 
 
 
-
 ## 🚀 Como usar
 
 Você pode utilizar de duas formas:
 
 ### 🌐 Acessar online
 Abra diretamente pelo link do repositório no GitHub Pages:  
- [Clique aqui para abrir o site](https://renannber.github.io/voluntariadoLocal/home.html)
+ https://renannber.github.io/voluntariadoLocal/home.html
 
 
 ### 📁 Usar localmente
 1. Clone o repositório:
 
-```bash
-git clone ( https://github.com/renannber/voluntariadoLocal.git)
+bash
+git clone https://github.com/renannber/voluntariadoLocal.git
 
-2-Acesse a pasta do projeto.
+2. Acesse a pasta do projeto.
+bash
+
 cd voluntariadoLocal
 
 
-3-Abra o arquivo index.html ou home.html no seu navegador 
+3. Abra o arquivo index.html ou home.html no seu navegador 
  
 
-📩 Contato
-Caso tenha alguma dúvida ou sugestão, entre em contato:
-renan18bernardes@gmail.com 
+## 📩 Contato
 
+Caso tenha alguma dúvida ou sugestão, entre em contato:  
+📧 [renan18bernardes@email.com](mailto:renanbernardes@email.com)
 
 
